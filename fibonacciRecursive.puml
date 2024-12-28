@@ -1,0 +1,13 @@
+@startuml
+actor User
+User -> fibonacciRecursive : n
+activate fibonacciRecursive
+fibonacciRecursive -> fibonacciRecursive : n-1
+activate fibonacciRecursive
+fibonacciRecursive -> fibonacciRecursive : n-2
+activate fibonacciRecursive
+fibonacciRecursive -> fibonacciRecursive : n-3
+deactivate fibonacciRecursive
+deactivate fibonacciRecursive
+return result
+@enduml
